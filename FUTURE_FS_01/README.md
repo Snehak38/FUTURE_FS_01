@@ -1,2 +1,3 @@
 #My Portflio website#
-🚀 Portfolio Project in Progress - Sneha Kadam
+🚀 This is portfolio project made by sneha kadam by using Html,CSS and JS.
+
