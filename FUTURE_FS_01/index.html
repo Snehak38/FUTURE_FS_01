@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+  <button class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">
+    Dark Mode
+  </button>
+
+  <nav id="desktop-nav">
+    <div class="logo">Sneha Kadam</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+   <nav id="hamburger-nav">
+      <div class="logo">Sneha Kadam</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile pic.jpeg" alt="Sneha Kadam profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sneha Kadam</h1>
+        <p class="section__text__p2">B.Tech in Information Technology</p><p>Welcome to my Portfolio</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Sneha Kadam Resume .pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sneha-kadam-20730728b/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Snehak38'"
+          />
+        </div>
+      </div>
+    </section>
+
+  <section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  
+  <div class="section-container">
+    <!-- About Image on Left -->
+    <div class="section__pic-container">
+      <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+    </div>
+
+    <!-- About Text on Right -->
+    <div class="about-details-container">
+      <div class="text-container">
+        <p>
+         I am Sneha Kadam pursuing B.Tech Engineering with a growing interest in technology, problem-solving, and innovation. I am focused on building a strong foundation in programming, system design, and understanding how technology shapes the world around us.
+Always open to internships and projects that help me learn, grow, and apply what I study in real-world situations. I believe in continuous learning and look forward to opportunities where I can contribute while gaining valuable experience.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certifications & Education side-by-side -->
+  <div class="about-containers">
+    <!-- Certifications Box -->
+    <div class="details-container">
+      <img src="./assets/Certifications.png" alt="Certifications Icon" class="icon" />
+      <h3>Certifications</h3>
+      <ul style="text-align: left; margin: 0 auto; max-width: 300px;">
+        <li>Programming Essentials in C | Cisco - Apr 2024</li>
+        <li>Cisco AICTE Virtual Internship | May-Jul 2024</li>
+        <li>Cisco Introduction to Cybersecurity | Jul 2024</li>
+        <li>Python Course For Beginners | Scaler - Jan 2024</li>
+      </ul>
+    </div>
+
+    <!-- Education Box -->
+    <div class="details-container">
+      <img src="./assets/education.png" alt="Education Icon" class="icon" />
+      <h3>Education</h3>
+      <ul style="text-align: left; margin: 0 auto; max-width: 300px;">
+        <li><strong>10th –</strong> Atomic Energy Central School-2, Mumbai | CBSE | 88.40% (2021)</li>
+        <li><strong>12th –</strong> Atomic Energy Junior College, Anushaktinagar | Maharashtra State Board | 71.5% (2021-2023)</li>
+        <li><strong>B.Tech –</strong> Information Technology (Expected Graduation: 2027)</li>
+      </ul>
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#certifications'" />
+</section>
+<section id="Certifications">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Abilities</h1>
+      <div class="Certifications-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="Certifications-sub-title">SKILLS</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  
+                </div>
+              </article>
+              <article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="Certifications-sub-title">professional & Soft skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication Skills</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adaptability</h3>
+                
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Teamwork & Collaboration</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certifications icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Time Management</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+
+     <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="Certifications-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Certifications project-title">Simple Calculator</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Snehak38/Simple-Calculator'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='http://127.0.0.1:5500/calculator.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Certifications project-title">My Portfolio</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Snehak-38/FUTURE_FS_01'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='http://127.0.0.1:5500/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <!-- Keep your contact section here unchanged -->
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright © 2025 Sneha Kadam. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
